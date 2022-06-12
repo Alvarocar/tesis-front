@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { MainTopbarComponent } from 'src/app/components/template/topbar/main-topbar/main-topbar.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MainTopbarComponent,
   ]
 })
 export class HomeModule { }
