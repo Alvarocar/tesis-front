@@ -1,8 +1,14 @@
+@import '/src/styles/variables.scss';
+
 .topbar {
+  display: block;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 5px 10px 0 $secundary-color;
 }
 
-.content {
-  background: #303854;
-  min-height: 100vh;
-  background-size: cover;
+.presentation {
+  display: block;
+  position: relative;
+  z-index: 1;
 }
