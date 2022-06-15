@@ -1,0 +1,12 @@
+@import '/src/styles/variables.scss';
+
+.main-footer {
+  min-height: 10vh;
+  background: $primary-color;
+  display: grid;
+  place-content: center;
+  color: $white-color;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .5rem 0;
+}

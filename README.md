@@ -13,6 +13,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 `
 ng g m pages/[page-name] --module app --route pages/[page-name]
 `
+
+### Generate a new Component
+
+`
+ng g c component/[component] --standalone
+`
+
 ### 
 
 ## Build
