@@ -7,13 +7,15 @@ import { MainTopbarComponent } from 'src/app/components/template/topbar/main-top
 import { PresentationComponent } from './children/presentation/presentation.component';
 import { ExplainComponent } from './children/explain/explain.component';
 import { MainFooterComponent } from 'src/app/components/template/footer/main-footer/main-footer.component';
+import { OptionsComponent } from './children/options/options.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     PresentationComponent,
-    ExplainComponent
+    ExplainComponent,
+    OptionsComponent
   ],
   imports: [
     CommonModule,
