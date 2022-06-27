@@ -1,0 +1,39 @@
+@mixin btn($color: white, $text-color: black) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  background: $color;
+  color: $text-color;
+}
+
+@mixin btn-effect--diagonal($color-efect: #90A4AE, $text-color: black) {
+  position: relative;
+  overflow: hidden;
+  z-index: initial;
+  transition: 1s ease-out all;
+  & > * {
+      z-index: 5;
+      position: relative;
+  }
+  &::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 100%;
+      background: $color-efect;
+      top: 0;
+      left: -150%;
+      clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+      z-index: 5;
+      transition: .5s ease-out all;
+  }
+  &:hover {
+      &::before {
+          left: 0;
+      }
+      color: $text-color;
+  }
+
+}

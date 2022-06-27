@@ -1,0 +1,44 @@
+@import "./variables.scss";
+@import "./buttons.scss";
+
+@mixin app-form {
+  color: $white-color;
+  &__fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    border: none;
+    & > legend {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    &--field {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      gap: .5rem;
+      padding: 0 1rem;
+      label {
+        font-weight: 500;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: .2rem .5rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+      }
+    }
+  }
+  &__buttons {
+    display: grid;
+    place-content: center;
+    &--submit {
+      @include btn($complement-color, $primary-color);
+      @include btn-effect--diagonal($primary-color, $white-color);
+    }
+  }
+}
