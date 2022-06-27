@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ### Generate a new page
 
 `
-ng g m pages/[page-name] --module app --route pages/[page-name]
+ng g m pages/[page-name] --module app --route [route-path]
 `
 
 ### Generate a new Component
