@@ -36,6 +36,7 @@
   &__buttons {
     display: grid;
     place-content: center;
+    padding: 1rem 0;
     &--submit {
       @include btn($complement-color, $primary-color);
       @include btn-effect--diagonal($primary-color, $white-color);
