@@ -1,0 +1,7 @@
+@import "/src/styles/forms.scss";
+
+.form {
+  @include app-form;
+  width: 20rem;
+  margin: 0 auto;
+}

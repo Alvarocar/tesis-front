@@ -1,3 +1,5 @@
+import { AbstractControl, FormGroup } from "@angular/forms"
+
 export interface Applicant {
   name: string
   about_me: string
@@ -7,6 +9,19 @@ export interface Applicant {
   modification_date: string
 }
 
-export type ApplicantLogIn = Required<Pick<Applicant, "email" | "password">>
+export interface ApplicantLogIn extends FormGroup {
+  value: Required<Pick<Applicant, "email" | "password">>
+  controls: {
+    email: AbstractControl
+    password: AbstractControl
+  }
+}
 
-export type ApplicantRegister = Required<Pick<Applicant, "email" | "password" | "name" >>
+export interface ApplicantRegister extends FormGroup {
+  value: Required<Pick<Applicant, "email" | "password" | "name" >>
+  controls: {
+    email: AbstractControl
+    password: AbstractControl
+    name: AbstractControl
+  }
+}

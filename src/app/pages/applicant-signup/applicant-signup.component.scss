@@ -1,13 +1,7 @@
 @import "/src/styles/variables.scss";
-@import "/src/styles/forms.scss";
 
 main {
   background: $secundary-color;
   min-height: 100vh;
   padding: 4rem 1rem;
-  .form {
-    @include app-form;
-    width: 20rem;
-    margin: 0 auto;
-  }
 }
